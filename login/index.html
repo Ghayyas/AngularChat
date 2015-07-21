@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppController">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Chat</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link href="./bower_components/angular-material/angular-material.css" rel="stylesheet">
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="./bower_components/firebase/firebase.js"></script>
+    <script src="./bower_components/angular-new-router/dist/router.es5.min.js"></script>
+
+
+
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+
+    <script src="./bower_components/angular-new-router/dist/router.es5.scope.js"></script>
+
+
+    <script src="./index.js"></script>
+    <script src="./components/login/login.js"></script>
+    <script src="./components/register/register.js"></script>
+    <script src="./components/dashboard/dashboard.js"></script>
+
+</head>
+<body>
+<div>
+    <ng-outlet></ng-outlet>
+    <br>
+
+
+    <div>
+        <footer class="footer-distributed">
+
+            <hr/>
+
+            <p class="footer-company-name" >Copyright &copy; 2015</p>
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/ghayyas94" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.twitter.com/mubashirghayyas" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.github.com/ghayyas" target="_blank"><i class="fa fa-github"></i></a>
+
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+</body>
+</html>

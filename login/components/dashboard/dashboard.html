@@ -1,0 +1,37 @@
+<div ng-if="login">
+    <h1 style="text-align: center">Angular Chat</h1>
+
+<md-input-container layout="row" layout-align="end start">
+  <md-select name="myModel" placeholder={{user}} ng-model="myModel" required>
+    <md-option value="settings">Settings</md-option>
+    <md-option value="LogOut" ng-click="logOut()">LogOut</md-option>
+  </md-select>
+</md-input-container>
+<div class="md-padding">
+<md-content class="md-padding">
+  <md-card>
+    <md-card-content>
+      <md-subheader class="md-no-sticky">All Messages</md-subheader>
+      <md-list-item class="md-3-line" ng-repeat="message in messages">
+       <img ng-src ="{{image}}" class="md-avatar"  />
+        <div class="md-list-item-text">
+        <b>Message:</b>  <h4>{{ message.text }}</h4>
+            <span layout="row" layout-align="end center">
+                <br/>
+                <b>By:</b>{{message.Name}}</span>
+               <b>Time:</b>{{message.timestamp | date: 'medium'}}
+            <hr/>
+        </div>
+      </md-list-item>
+    </md-card-content>
+  </md-card>
+  </md-content>
+
+ <md-input-container>
+    <label>Name</label>
+    <input type="text"   ng-model="newVal" placeholder="Type Your Message" ng-required="true">
+  </md-input-container>
+  <md-button class="md-raised" ng-click="addThis()">Submit</md-button>
+</div>
+  </div>
+

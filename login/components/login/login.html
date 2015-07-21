@@ -1,0 +1,28 @@
+<md-content layout="row" layout-align="center end">
+<h2> Wellcome to Angular Chat</h2>
+</md-content>
+<form name="myForm" novalidate>
+<div class="login">
+<md-content layout="row" layout-align="center end">
+    <md-input-container>
+        <label>Enter Your Email</label>
+        <input type="email" ng-model="user.email"/>
+    </md-input-container>
+</md-content>
+<md-content layout="row" layout-align="center end">
+<md-input-container>
+    <label>Password</label>
+    <input type="password" ng-model="user.pass"/>
+</md-input-container>
+</md-content>
+<md-content layout="row" layout-align="center end">
+    <md-button class="md-raised md-primary" ng-click="submit()" ng-disabled="!user.email || !user.pass">Submit</md-button>
+    <md-button class="md-raised " ng-link="register">Register</md-button>
+</md-content>
+
+</div>
+    <md-content layout="row" layout-align="center end">
+    <p ng-show="err" style="color: red">{{log}}</p>
+        </md-content>
+
+</form>
